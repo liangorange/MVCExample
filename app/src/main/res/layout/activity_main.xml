@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="MVC Example App"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Student Name"
+        android:id="@+id/studentName"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editName"
+        android:layout_below="@+id/studentName"
+        android:layout_alignLeft="@+id/editNumber"
+        android:layout_alignStart="@+id/editNumber"
+        android:layout_alignRight="@+id/editNumber"
+        android:layout_alignEnd="@+id/editNumber" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Student Number"
+        android:id="@+id/studentNumber"
+        android:layout_below="@+id/editName"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editNumber"
+        android:layout_below="@+id/studentNumber"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Student Gender"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/editNumber"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editGender"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/editNumber"
+        android:layout_alignStart="@+id/editNumber"
+        android:layout_alignRight="@+id/editNumber"
+        android:layout_alignEnd="@+id/editNumber" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Student Info"
+        android:id="@+id/changeButton"
+        android:onClick="changeStudentInfo"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/resultLabel"
+        android:layout_alignLeft="@+id/editGender"
+        android:layout_alignStart="@+id/editGender" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Student Info:"
+        android:textSize="15sp"
+        android:id="@+id/resultLabel"
+        android:layout_below="@+id/editGender"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Student"
+        android:id="@+id/buttonAdd"
+        android:onClick="addNewStudent"
+        android:layout_below="@+id/changeButton"
+        android:layout_alignLeft="@+id/changeButton"
+        android:layout_alignStart="@+id/changeButton"
+        android:layout_alignRight="@+id/changeButton"
+        android:layout_alignEnd="@+id/changeButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total Student:"
+        android:id="@+id/totalLabel"
+        android:layout_below="@+id/buttonAdd"
+        android:layout_alignLeft="@+id/buttonAdd"
+        android:layout_alignStart="@+id/buttonAdd" />
+
+</RelativeLayout>
